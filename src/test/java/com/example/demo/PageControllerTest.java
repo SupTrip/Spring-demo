@@ -23,7 +23,7 @@ public class PageControllerTest {
     }
     @Test
     public void checkPi() throws  Exception{
-        RequestBuilder request = get("/piVal");
+        RequestBuilder request = get("/math/pi");
         this.mvc.perform(request)
                 .andExpect(status().isOk())
                 .andExpect(content().string("3.14159"));
