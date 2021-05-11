@@ -11,5 +11,9 @@ public class PagesController {
     public String Hello(){
         return "Hello World";
     }
+    @GetMapping("/piVal")
+    public String PiVal(){
+        return "3.14159";
+    }
 
 }
